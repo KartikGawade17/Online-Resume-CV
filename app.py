@@ -21,6 +21,7 @@ EMAIL = "kartikgawadeds17@gmail.com"
 SOCIAL_MEDIA = {
     "LinkedIn": "https://www.linkedin.com/in/kartik-gawade-023b24300/",
     "GitHub": "https://github.com/KartikGawade17",
+    "Whatsapp": "https://wa.me/qr/DNS3X2PKR7UJJ1",
 }
 PROJECTS = {
     "🏆 Toxic Comment Analyzer - Gradio app and Deep learning",
@@ -28,11 +29,6 @@ PROJECTS = {
     "🏆 Air Canvas - NumPy, OpenCV",
     "🏆 Insurance price prediction - Machine Learning (Supervised), Regression",
 }
-
-
-
-
-
 
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
 
@@ -70,6 +66,7 @@ for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
 # --- EXPERIENCE & QUALIFICATIONS ---
 st.write('\n')
 st.subheader("Education")
+st.write("---")
 st.write(
     """
 - ✔️ Sindhudurg Sainik School | S.S.C. | Sindhudurg, Maharashtra | Jun 2013 – Mar 2019
@@ -82,6 +79,7 @@ st.write(
 # --- SKILLS ---
 st.write('\n')
 st.subheader("Hard Skills")
+st.write("---")
 st.write(
     """
 - 👩‍💻 Programming: Python (Scikit-learn, Pandas), SQL, Machine Learning, Deep Learning
@@ -94,6 +92,7 @@ st.write(
 # --- Projects & Accomplishments ---
 st.write('\n')
 st.subheader("Projects")
+st.write("---")
 st.write(
     """
 - 🏆 Toxic Comment Analyzer - Gradio app and Deep learning
