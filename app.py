@@ -15,7 +15,7 @@ PAGE_TITLE = "Digital CV | Kartik Gawade"
 PAGE_ICON = ":wave:"
 NAME = "Kartik Gawade"
 DESCRIPTION = """
-Data Science Enthusiast
+Data Science Enthusiast seeking to gain hands-on experience in data science and Machine Learning.
 """
 EMAIL = "kartikgawadeds17@gmail.com"
 SOCIAL_MEDIA = {
