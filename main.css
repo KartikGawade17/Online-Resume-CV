@@ -10,8 +10,8 @@ a {
     font-weight: 500;
 }
 
-a:hover {
-    color: #d33682 !important;
+a {
+    color: #0c0b0c !important;
     text-decoration: none;
 }
 
