@@ -23,6 +23,7 @@ SOCIAL_MEDIA = {
     "GitHub": "https://github.com/KartikGawade17",
     "Whatsapp": "https://wa.me/qr/DNS3X2PKR7UJJ1",
 }
+
 PROJECTS = {
     "🏆 Toxic Comment Analyzer - Gradio app and Deep learning",
     "🏆 Diabetics Prediction (Based on Symptoms) - Machine learning",
