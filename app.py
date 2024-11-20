@@ -37,13 +37,13 @@ with open(css_file) as f:
     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 with open(resume_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
-profile_pic = image.open(profile_pic)
+profile_pic = Image.open(profile_pic)
 
 
 # --- HERO SECTION ---
 col1, col2 = st.columns(2, gap="small")
 with col1:
-    st.image(profile_pic, width=300)
+    st.Image(profile_pic, width=300)
 
 with col2:
     st.title(NAME)
