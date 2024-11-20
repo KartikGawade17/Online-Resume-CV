@@ -41,7 +41,7 @@ if resume_file.exists():
         print("Resume file read successfully!")
 else:
     print(f"Error: Resume file not found at {resume_file}")
-profile_pic = image.open(profile_pic)
+profile_pic = Image.open(profile_pic)
 
 
 # --- HERO SECTION ---
