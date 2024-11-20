@@ -8,8 +8,8 @@ from PIL import Image
 current_dir = Path("D:\online cv").parent if "D:\online cv" in locals() else Path.cwd()
 
 css_file = current_dir / "main.css"
-resume_file = Path("D:\\online cv\\assets\\resume.pdf")
-profile_pic = Path("D:\\online cv\\assets\\profile-pic.png")
+resume_file = current_dir / "resume.pdf"
+profile_pic = current_dir / "profile-pic.png"
 
 
 # --- GENERAL SETTINGS ---
