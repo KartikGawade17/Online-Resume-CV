@@ -2,7 +2,7 @@ from pathlib import Path
 import streamlit as st
 from PIL import Image
 
-current_dir = Path(r"D:\resumeonline") if Path(r"D:\resumeonline").exists() else Path.cwd()
+current_dir = Path("D:\resumeonline").parent if "D:\resumeonline" in locals() else Path.cwd()
 
 css_file = current_dir / "main.css"
 resume_file = current_dir / "resume.pdf"
