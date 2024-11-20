@@ -6,7 +6,7 @@ from PIL import Image
 
 # --- PATH SETTINGS ---
 current_dir = Path("D:\\online cv").parent if "D:\\online cv" in locals() else Path.cwd()
-css_file = current_dir / "styles" / "main.css"
+css_file = current_dir /"main.css"
 resume_file = current_dir / "assets" / "resume.pdf"
 profile_pic = current_dir / "assets" / "profile-pic.png"
 
