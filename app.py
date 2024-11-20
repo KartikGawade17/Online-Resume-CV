@@ -4,9 +4,9 @@ from PIL import Image
 
 current_dir = Path("D:\resumeonline") if Path("D:\resumeonline").exists() else Path.cwd()
 
-css_file = current_dir / "main.css"
-resume_file = current_dir / "assets" /"resume.pdf"
-profile_pic_path = current_dir / "assets"/ "hero.jpg"
+css_file = current_dir/"main.css"
+resume_file = current_dir/assets/"resume.pdf"
+profile_pic_path = current_dir/assets/"hero.jpg"
 
 PAGE_TITLE = "Digital CV | Kartik Gawade"
 PAGE_ICON = ":wave:"
@@ -43,7 +43,7 @@ except Exception as e:
 # Hero Section
 col1, col2 = st.columns(2, gap="small")
 with col1:
-    st.image(profile_pic, width=300)
+    st.image(profile_pic, width=200)
 with col2:
     st.title("Kartik Gawade")
     st.write("Data Science Enthusiast...")
