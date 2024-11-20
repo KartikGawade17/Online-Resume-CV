@@ -5,7 +5,8 @@ from PIL import Image
 
 #income and expense tracker using machine learning or deep learing
 
-current_dir = Path("D:\online cv").parent if "D:\online cv" in locals() else Path.cwd()
+current_dir = Path(r"D:\online cv") if Path(r"D:\online cv").exists() else Path.cwd()
+
 css_file = current_dir / "main.css"
 resume_file = current_dir / "assets" / "resume.pdf" 
 profile_pic = current_dir / "assets" / "hero.jpg"
