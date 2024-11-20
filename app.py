@@ -5,7 +5,7 @@ from PIL import Image
 
 
 # --- PATH SETTINGS ---
-current_dir = Path("D:\\online cv").parent if "D:\\online cv" in locals() else Path.cwd()
+current_dir = Path("D:\online cv").parent if "D:\online cv" in locals() else Path.cwd()
 
 css_file = current_dir / "main.css"
 resume_file = Path("D:\online cv\assets\resume.pdf")
@@ -19,7 +19,7 @@ NAME = "Kartik Gawade"
 DESCRIPTION = """
 Data Science Enthusiast seeking to gain hands-on experience in data science,.Data Analytics and Machine Learning.
 """
-EMAIL = "lartikgawadeds17@gmail.com"
+EMAIL = "kartikgawadeds17@gmail.com"
 SOCIAL_MEDIA = {
     "LinkedIn": "www.linkedin.com/in/kartik-gawade-023b24300",
     "GitHub": "https://github.com/KartikGawade17",
