@@ -4,4 +4,5 @@ Excited to share that I’ve built my online CV using Streamlit and Python! This
 
 SAMPLE IMAGES
 
-![CV Screenshot](C:\Users\karti\Downloads\1.png)
+![CV Screenshot](1.png)
+![CV Screenshot](2.png)
