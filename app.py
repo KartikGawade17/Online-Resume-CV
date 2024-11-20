@@ -1,58 +1,62 @@
 from pathlib import Path
+
 import streamlit as st
 from PIL import Image
 
-current_dir = Path("D:\resumeonline") if Path("D:\resumeonline").exists() else Path.cwd()
 
-css_file = current_dir/"main.css"
-resume_file = current_dir/"resume.pdf"
-profile_pic_path = current_dir/"hero.jpg"
+# --- PATH SETTINGS ---
+current_dir = Path(D:/online cv).parent if "D:/online cv" in locals() else Path.cwd()
+css_file = current_dir / "styles" / "main.css"
+resume_file = current_dir / "assets" / "resume.pdf"
+profile_pic = current_dir / "assets" / "hero.jpg"
 
+
+# --- GENERAL SETTINGS ---
 PAGE_TITLE = "Digital CV | Kartik Gawade"
 PAGE_ICON = ":wave:"
+NAME = "Kartik Gawade"
+DESCRIPTION = """
+Data Science Enthusiast seeking to gain hands-on experience in data science,.Data Analytics and Machine Learning.
+"""
+EMAIL = "lartikgawadeds17@gmail.com"
+SOCIAL_MEDIA = {
+    "LinkedIn": "www.linkedin.com/in/kartik-gawade-023b24300",
+    "GitHub": "https://github.com/KartikGawade17",
+}
+PROJECTS = {
+    "🏆 Toxic Comment Analyzer - Gradio app and Deep learning",
+    "🏆 Crime Against Women (2019 - 2022) - Analytics, Power BI",
+    "🏆 Adventure Works Report (2020 - 2022) - Analytics Project, Power BI, Excel",
+    "🏆 Insurance price prediction - Machine Learning (Supervised), Regression",
+}
+
+
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
 
-# Debug paths
-print(f"CSS File Path: {css_file} | Exists: {css_file.exists()}")
-print(f"Resume File Path: {resume_file} | Exists: {resume_file.exists()}")
-print(f"Profile Picture Path: {profile_pic_path} | Exists: {profile_pic_path.exists()}")
 
-# Load CSS
-if css_file.exists():
-    with open(css_file) as f:
-        st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
-else:
-    st.error("CSS file not found.")
+# --- LOAD CSS, PDF & PROFIL PIC ---
+with open(css_file) as f:
+    st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
+with open(resume_file, "rb") as pdf_file:
+    PDFbyte = pdf_file.read()
+profile_pic = Image.open(profile_pic)
 
-# Load Resume
-if resume_file.exists():
-    with open(resume_file, "rb") as pdf_file:
-        PDFbyte = pdf_file.read()
-else:
-    st.error("Resume file not found.")
 
-# Load Profile Picture
-try:
-    if profile_pic_path.exists():
-        profile_pic = Image.open(profile_pic_path)
-    else:
-        raise FileNotFoundError("Profile picture not found.")
-except Exception as e:
-    st.error(f"Error loading profile picture: {e}")
-
-# Hero Section
+# --- HERO SECTION ---
 col1, col2 = st.columns(2, gap="small")
 with col1:
-    st.image(profile_pic, width=200)
+    st.image(profile_pic, width=230)
+
 with col2:
-    st.title("Kartik Gawade")
-    st.write("Data Science Enthusiast...")
+    st.title(NAME)
+    st.write(DESCRIPTION)
     st.download_button(
         label=" 📄 Download Resume",
         data=PDFbyte,
-        file_name="resume.pdf",
+        file_name=resume_file.name,
         mime="application/octet-stream",
     )
+    st.write("📫", EMAIL)
 
 
 # --- SOCIAL LINKS ---
