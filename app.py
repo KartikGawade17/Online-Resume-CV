@@ -7,15 +7,15 @@ from PIL import Image
 
 current_dir = Path("D:\online cv").parent if "D:\online cv" in locals() else Path.cwd()
 css_file = current_dir / "main.css"
-resume_file = current_dir / "RESUME.pdf"
-profile_pic = current_dir / "profilepic.jpg"
+resume_file = current_dir / "Kartik Gawade Resume.pdf"
+profile_pic = current_dir / "hero.jpg"
 
 
 PAGE_TITLE = "Digital CV | Kartik Gawade"
 PAGE_ICON = ":wave:"
 NAME = "Kartik Gawade"
 DESCRIPTION = """
-Data Science Enthusiast seeking to gain hands-on experience in data science and Machine Learning.
+Data Science Enthusiast seeking to gain hands-on experience in data science,.Data Analytics and Machine Learning.
 """
 EMAIL = "kartikgawadeds17@gmail.com"
 SOCIAL_MEDIA = {
@@ -26,8 +26,8 @@ SOCIAL_MEDIA = {
 
 PROJECTS = {
     "🏆 Toxic Comment Analyzer - Gradio app and Deep learning",
-    "🏆 Diabetics Prediction (Based on Symptoms) - Machine learning",
-    "🏆 Air Canvas - NumPy, OpenCV",
+    "🏆 Crime Against Women (2019 - 2022) - Analytics, Power BI",
+    "🏆 Adventure Works Report (2020 - 2022) - Analytics Project, Power BI, Excel",
     "🏆 Insurance price prediction - Machine Learning (Supervised), Regression",
 }
 
