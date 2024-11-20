@@ -87,9 +87,9 @@ st.write("---")
 st.write(
     """
 - 👩‍💻 Programming: Python (Scikit-learn, Pandas), SQL, Machine Learning, Deep Learning
-- 📊 Data Visulization: PowerBi
+- 📊 Data Visulization: Power BI, Excel
 - 📚 Modeling: linear regression, decision tree, Random Forest
-- 🗄️ Databases: MySQL
+- 🗄️ Databases: MySQL, PostgresSQL
 """
 )
 
