@@ -37,7 +37,7 @@ with open(css_file) as f:
     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 with open(resume_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
-profile_pic = Image.open(profile_pic)
+profile_pic = image.open(profile_pic)
 
 
 # --- HERO SECTION ---
@@ -97,8 +97,8 @@ st.write("---")
 st.write(
     """
 - 🏆 Toxic Comment Analyzer - Gradio app and Deep learning
-- 🏆 Diabetics Prediction (Based on Symptoms) - Machine learning
-- 🏆 Air Canvas - NumPy, OpenCV
+- 🏆 Crime Against Women (2019 - 2022) - Analytics, Power BI
+- 🏆 Adventure Works Report (2020 - 2022) - Analytics Project, Power BI, Excel
 - 🏆 Insurance price prediction - Machine Learning (Supervised), Regression
 """
 )
