@@ -41,13 +41,13 @@ if resume_file.exists():
         print("Resume file read successfully!")
 else:
     print(f"Error: Resume file not found at {resume_file}")
-profile_pic = Image.open(profile_pic)
+profile_pic = image.open(profile_pic)
 
 
 # --- HERO SECTION ---
 col1, col2 = st.columns(2, gap="small")
 with col1:
-    st.Image(profile_pic, width=300)
+    st.image(profile_pic, width=300)
 
 with col2:
     st.title(NAME)
