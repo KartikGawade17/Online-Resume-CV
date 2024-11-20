@@ -9,7 +9,7 @@ current_dir = Path("D:\online cv").parent if "D:\online cv" in locals() else Pat
 
 css_file = current_dir / "main.css"
 resume_file = current_dir / "Kartik Gawade Resume.pdf"
-profile_pic = current_dir / "profile-pic.png"
+profile_pic = current_dir / "profile-pic (1).png"
 
 
 # --- GENERAL SETTINGS ---
