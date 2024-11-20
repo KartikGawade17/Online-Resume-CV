@@ -1,2 +1,3 @@
-# CV-app
-This is the streamlit app that i have created to build a online resume (CV)
+# Online Resume
+
+Excited to share that I’ve built my online CV using Streamlit and Python! This interactive CV showcases my skills, projects, and experience in a dynamic and accessible way. Feel free to explore it and get to know more about my professional journey. Check it out here: https://kartik-cv.streamlit.app/
