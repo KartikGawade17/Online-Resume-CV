@@ -36,13 +36,9 @@ st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
 
 with open(css_file) as f:
     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
-if resume_file.exists():
-    with open(resume_file, "rb") as pdf_file:
-        PDFbyte = pdf_file.read()
-        print("Resume file read successfully!")
-else:
-    print(f"Error: Resume file not found at {resume_file}")
-profile_pic = image.open(profile_pic)
+with open(resume_file, "rb") as pdf_file:
+    PDFbyte = pdf_file.read()
+profile_pic = Image.open(profile_pic)
 
 
 # --- HERO SECTION ---
