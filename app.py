@@ -4,9 +4,9 @@ from PIL import Image
 
 current_dir = Path(r"D:\resumeonline") if Path(r"D:\resumeonline").exists() else Path.cwd()
 
-css_file = current_dir /"assets"/ "main.css"
+css_file = current_dir / "main.css"
 resume_file = current_dir / "assets" /"resume.pdf"
-profile_pic_path = current_dir / "hero.jpg"
+profile_pic_path = current_dir / "assets"/ "hero.jpg"
 
 PAGE_TITLE = "Digital CV | Kartik Gawade"
 PAGE_ICON = ":wave:"
