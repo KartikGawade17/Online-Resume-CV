@@ -28,7 +28,7 @@ PROJECTS = {
     "🏆 Toxic Comment Analyzer - Gradio app and Deep learning",
     "🏆 Crime Against Women (2019 - 2022) - Analytics, Power BI",
     "🏆 Adventure Works Report (2020 - 2022) - Analytics Project, Power BI, Excel",
-    "🏆 Insurance price prediction - Machine Learning (Supervised), Regression",
+    "🏆 Road Accidents in India (2015 - 2022) - Analytic, SQL, Power BI, Excel",
 }
 
 
