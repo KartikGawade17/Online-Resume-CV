@@ -8,7 +8,7 @@ from PIL import Image
 current_dir = Path("D:\online cv").parent if "D:\online cv" in locals() else Path.cwd()
 
 css_file = current_dir / "main.css"
-resume_file = current_dir / "Kartik Gawade Resume_ 1.pdf"
+resume_file = current_dir / "Kartik_Updated_resume.pdf"
 profile_pic = current_dir / "profile-pic (1).png"
 
 
@@ -105,3 +105,4 @@ st.write(
 - 🏆 Insurance price prediction - Machine Learning (Supervised), Regression
 """
 )
+
