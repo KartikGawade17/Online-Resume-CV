@@ -101,8 +101,8 @@ st.write(
     """
 - 🏆 Toxic Comment Analyzer - Gradio app and Deep learning
 - 🏆 Crime Against Women (2019 - 2022) - Analytics, Power BI
-- 🏆 Adventure Works Report (2020 - 2022) - Analytics Project, Power BI, Excel
-- 🏆 Insurance price prediction - Machine Learning (Supervised), Regression
+- 🏆 UFC Fight Prediction and Analysis report - SQL, Machine Learning, Power BI, Streamlit
 """
 )
+
 
